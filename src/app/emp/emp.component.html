@@ -1,0 +1,23 @@
+<h3>Emp Details</h3>
+<hr>
+<table border="2">
+	<tr>
+		<th>Ename</th>
+		<th>Salary</th>
+		<th>Depertment</th>
+		<th>Eno</th>
+		<th></th>
+	</tr>
+	<tr *ngFor="let item of emp">
+		<td>{{item.ename}}</td>
+		<td>{{item.eno}}</td>
+		<td>{{item.sal}}</td>
+		<td>{{item.dep}}</td>
+		<td>
+	<a [routerLink]="['/Details',item.eno]">Select</a>
+		</td>
+		<!-- <td>
+			<a href="JavaScript:Void(0)"  >Select</a>
+		</td> -->
+	</tr>
+</table>
